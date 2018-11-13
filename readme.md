@@ -20,3 +20,5 @@ Mit dem in GDAL inkudierten Programm `ogr2ogr` lässt sich der Datensatz konvert
 Dazu ist folgender Befehl abzusetzen (beide Konvertiervorgänge werden parallel zueinander gestartet):
 
     ogr2ogr -f CSV -lco GEOMETRY=AS_XY -t_srs EPSG:4326 ADRESSE_4326.csv ADRESSE.vrt & ogr2ogr -f CSV -lco GEOMETRY=AS_XY -t_srs EPSG:4326 GEBAEUDE_4326.csv GEBAEUDE.vrt
+
+Für die Konvertierung dieser beiden Dateien werden auf einem aktuellen Rechner (2018) 03:23 Minuten benötigt.
